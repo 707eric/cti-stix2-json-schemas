@@ -1,12 +1,12 @@
 {
-  "$id": "http://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/stix2.1/schemas/sdos/observed-data.json",
+  "$id": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/sdos/observed-data.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "observed-data",
   "description": "Observed data conveys information that was observed on systems and networks, such as log data or network traffic, using the Cyber Observable specification.",
   "type": "object",
   "allOf": [
     {
-      "$ref": "../common/core.json"
+      "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/core.json"
     },
     {
       "properties": {
@@ -22,11 +22,11 @@
           "pattern": "^observed-data--"
         },
         "first_observed": {
-          "$ref": "../common/timestamp.json",
+          "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/timestamp.json",
           "description": "The beginning of the time window that the data was observed during."
         },
         "last_observed": {
-          "$ref": "../common/timestamp.json",
+          "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/timestamp.json",
           "description": "The end of the time window that the data was observed during."
         },
         "number_observed": {
@@ -46,7 +46,7 @@
                 {
                   "allOf": [
                     {
-                      "$ref": "../common/cyber-observable-core.json"
+                      "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/cyber-observable-core.json"
                     },
                     {
                       "not": {
@@ -128,7 +128,7 @@
               {
                 "allOf": [
                   {
-                    "$ref": "../common/identifier.json"
+                    "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/identifier.json"
                   },
                   {
                     "not": {

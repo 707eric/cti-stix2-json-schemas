@@ -1,14 +1,14 @@
 {
-  "$id": "http://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/stix2.1/schemas/common/properties.json",
+  "$id": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/properties.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "properties",
   "description": "Rules for custom properties",
   "patternProperties": {
     "^[a-z][a-z0-9_]{0,245}_bin$": {
-      "$ref": "../common/binary.json"
+      "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/binary.json"
     },
     "^[a-z][a-z0-9_]{0,245}_hex$": {
-      "$ref": "../common/hex.json"
+      "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/hex.json"
     },
     "^([a-z][a-z0-9_]{2,249})|id$": {
       "anyOf": [

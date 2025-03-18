@@ -1,12 +1,12 @@
 {
-  "$id": "http://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/stix2.1/schemas/observables/ipv6-addr.json",
+  "$id": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/observables/ipv6-addr.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "ipv6-addr",
   "description": "The IPv6 Address Object represents one or more IPv6 addresses expressed using CIDR notation.",
   "type": "object",
   "allOf": [
     {
-      "$ref": "../common/cyber-observable-core.json"
+      "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/cyber-observable-core.json"
     },
     {
       "properties": {

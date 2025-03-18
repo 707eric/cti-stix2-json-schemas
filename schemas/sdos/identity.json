@@ -1,12 +1,12 @@
 {
-  "$id": "http://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/stix2.1/schemas/sdos/identity.json",
+  "$id": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/sdos/identity.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "identity",
   "description": "Identities can represent actual individuals, organizations, or groups (e.g., ACME, Inc.) as well as classes of individuals, organizations, or groups.",
   "type": "object",
   "allOf": [
     {
-      "$ref": "../common/core.json"
+      "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/core.json"
     },
     {
       "properties": {

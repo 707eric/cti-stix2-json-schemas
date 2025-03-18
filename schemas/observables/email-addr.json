@@ -1,12 +1,12 @@
 {
-  "$id": "http://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/stix2.1/schemas/observables/email-addr.json",
+  "$id": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/observables/email-addr.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "email-addr",
   "description": "The Email Address Object represents a single email address.",
   "type": "object",
   "allOf": [
     {
-      "$ref": "../common/cyber-observable-core.json"
+      "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/cyber-observable-core.json"
     },
     {
       "properties": {

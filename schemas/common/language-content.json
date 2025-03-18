@@ -1,12 +1,12 @@
 {
-  "$id": "http://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/stix2.1/schemas/common/language-content.json",
+  "$id": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/language-content.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "language-content",
   "description": "The language-content object represents text content for STIX Objects represented in languages other than that of the original object.",
   "type": "object",
   "allOf": [
     {
-      "$ref": "../common/core.json"
+      "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/core.json"
     },
     {
       "properties": {
@@ -25,7 +25,7 @@
           "description": "Identifies the object that this Language Content applies to.",
           "allOf": [
             {
-              "$ref": "../common/identifier.json"
+              "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/identifier.json"
             },
             {
               "not": {
@@ -35,11 +35,11 @@
           ]
         },
         "object_modified": {
-          "$ref": "../common/timestamp.json",
+          "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/timestamp.json",
           "description": "Identifies the modified time of the object that this Language Content applies to."
         },
         "contents": {
-          "$ref": "../common/dictionary.json",
+          "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/dictionary.json",
           "description": "Contains the actual Language Content (translation)."
         }
       }

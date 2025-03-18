@@ -1,12 +1,12 @@
 {
-  "$id": "http://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/stix2.1/schemas/observables/mac-addr.json",
+  "$id": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/observables/mac-addr.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "mac-addr",
   "description": "The MAC Address Object represents a single Media Access Control (MAC) address.",
   "type": "object",
   "allOf": [
     {
-      "$ref": "../common/cyber-observable-core.json"
+      "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/cyber-observable-core.json"
     },
     {
       "properties": {

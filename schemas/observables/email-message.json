@@ -1,12 +1,12 @@
 {
-  "$id": "http://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/stix2.1/schemas/observables/email-message.json",
+  "$id": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/observables/email-message.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "email-message",
   "description": "The Email Message Object represents an instance of an email message.",
   "type": "object",
   "allOf": [
     {
-      "$ref": "../common/cyber-observable-core.json"
+      "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/cyber-observable-core.json"
     },
     {
       "properties": {
@@ -22,7 +22,7 @@
           "pattern": "^email-message--"
         },
         "date": {
-          "$ref": "../common/timestamp.json",
+          "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/timestamp.json",
           "description": "Specifies the date/time that the email message was sent."
         },
         "content_type": {
@@ -174,7 +174,7 @@
       ]
     },
     "email-additional-header-fields": {
-      "allOf": [{ "$ref": "../common/dictionary.json" }],
+      "allOf": [{ "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/dictionary.json" }],
       "description": "Specifies any other header fields (except for date, received_lines, content_type, from_ref, sender_ref, to_refs, cc_refs, bcc_refs, and subject) found in the email message, as a dictionary.",
       "not": {
         "patternProperties": {

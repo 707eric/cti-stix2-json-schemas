@@ -1,12 +1,12 @@
 {
-  "$id": "http://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/stix2.1/schemas/common/extension-definition.json",
+  "$id": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/extension-definition.json",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "extension-definition",
   "description": "The STIX Extension Definition object allows producers of threat intelligence to extend existing STIX objects or to create entirely new STIX objects in a standardized way.",
   "type": "object",
   "allOf": [
     {
-      "$ref": "../common/core.json"
+      "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/core.json"
     },
     {
       "properties": {
