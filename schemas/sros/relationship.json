@@ -6,7 +6,7 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/core.json"
+      "$ref": "../common/core.json"
     },
     {
       "properties": {
@@ -35,7 +35,7 @@
           "description": "The ID of the source (from) object.",
           "allOf": [
             {
-              "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/identifier.json"
+              "$ref": "../common/identifier.json"
             },
             {
               "not": {
@@ -48,7 +48,7 @@
           "description": "The ID of the target (to) object.",
           "allOf": [
             {
-              "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/identifier.json"
+              "$ref": "../common/identifier.json"
             },
             {
               "not": {
@@ -58,11 +58,11 @@
           ]
         },
         "start_time": {
-          "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/timestamp.json",
+          "$ref": "../common/timestamp.json",
           "description": "This optional timestamp represents the earliest time at which the Relationship between the objects exists. If this property is a future timestamp, at the time the updated property is defined, then this represents an estimate by the producer of the intelligence of the earliest time at which relationship will be asserted to be true."
         },
         "stop_time": {
-          "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/timestamp.json",
+          "$ref": "../common/timestamp.json",
           "description": "The latest time at which the Relationship between the objects exists. If this property is a future timestamp, at the time the updated property is defined, then this represents an estimate by the producer of the intelligence of the latest time at which relationship will be asserted to be true."
         }
       }

@@ -6,7 +6,7 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/cyber-observable-core.json"
+      "$ref": "../common/cyber-observable-core.json"
     },
     {
       "properties": {
@@ -22,7 +22,7 @@
           "pattern": "^url--"
         },
         "value": {
-          "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/url-regex.json",
+          "$ref": "../common/url-regex.json",
           "description": "Specifies the value of the URL."
         }
       }

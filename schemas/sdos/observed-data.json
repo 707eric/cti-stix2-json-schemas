@@ -6,7 +6,7 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/core.json"
+      "$ref": "../common/core.json"
     },
     {
       "properties": {
@@ -22,11 +22,11 @@
           "pattern": "^observed-data--"
         },
         "first_observed": {
-          "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/timestamp.json",
+          "$ref": "../common/timestamp.json",
           "description": "The beginning of the time window that the data was observed during."
         },
         "last_observed": {
-          "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/timestamp.json",
+          "$ref": "../common/timestamp.json",
           "description": "The end of the time window that the data was observed during."
         },
         "number_observed": {
@@ -46,7 +46,7 @@
                 {
                   "allOf": [
                     {
-                      "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/cyber-observable-core.json"
+                      "$ref": "../common/cyber-observable-core.json"
                     },
                     {
                       "not": {
@@ -128,7 +128,7 @@
               {
                 "allOf": [
                   {
-                    "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/identifier.json"
+                    "$ref": "../common/identifier.json"
                   },
                   {
                     "not": {

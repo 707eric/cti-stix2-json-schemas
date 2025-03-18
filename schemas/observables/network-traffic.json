@@ -6,7 +6,7 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/cyber-observable-core.json"
+      "$ref": "../common/cyber-observable-core.json"
     },
     {
       "properties": {
@@ -26,11 +26,11 @@
           "description": "The Network Traffic Object defines the following extensions. In addition to these, producers MAY create their own. Extensions: http-ext, tcp-ext, icmp-ext, socket-ext"
         },
         "start": {
-          "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/timestamp.json",
+          "$ref": "../common/timestamp.json",
           "description": "Specifies the date/time the network traffic was initiated, if known."
         },
         "end": {
-          "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/timestamp.json",
+          "$ref": "../common/timestamp.json",
           "description": "Specifies the date/time the network traffic ended, if known."
         },
         "src_ref": {
@@ -79,7 +79,7 @@
         },
         "ipfix": {
           "description": "Specifies any IP Flow Information Export (IPFIX) data for the traffic.",
-          "allOf": [{ "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/dictionary.json" }],
+          "allOf": [{ "$ref": "../common/dictionary.json" }],
           "patternProperties": {
             "^[a-zA-Z0-9_-]{0,250}$": {
               "anyOf": [
@@ -175,7 +175,7 @@
   ],
   "definitions": {
     "network-traffic-extensions-dictionary": {
-      "allOf": [{ "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/dictionary.json" }],
+      "allOf": [{ "$ref": "../common/dictionary.json" }],
       "patternProperties": {
         "^http-request-ext$": {
           "type": "object",
@@ -194,7 +194,7 @@
               "description": "Specifies the HTTP version portion of the HTTP request line, as a lowercase string."
             },
             "request_header": {
-              "allOf": [{ "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/dictionary.json" }],
+              "allOf": [{ "$ref": "../common/dictionary.json" }],
               "description": "Specifies all of the HTTP header fields that may be found in the HTTP client request, as a dictionary.",
               "patternProperties": {
                 "^.+$": {
@@ -225,11 +225,11 @@
           "description": "The ICMP extension specifies a default extension for capturing network traffic properties specific to ICMP.",
           "properties": {
             "icmp_type_hex": {
-              "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/hex.json",
+              "$ref": "../common/hex.json",
               "description": "Specifies the ICMP type byte."
             },
             "icmp_code_hex": {
-              "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/hex.json",
+              "$ref": "../common/hex.json",
               "description": "Specifies the ICMP code byte."
             }
           },
@@ -265,7 +265,7 @@
               "description": "Specifies whether the socket is in listening mode."
             },
             "options": {
-              "allOf": [{ "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/dictionary.json" }],
+              "allOf": [{ "$ref": "../common/dictionary.json" }],
               "description": "Specifies any options (SO_*) that may be used by the socket, as a dictionary.",
               "patternProperties": {
                 "^(SO|ICMP|ICMP6|IP|IPV6|MCAST|TCP|IRLMP)(_[A-Z]+)+$": {
@@ -306,11 +306,11 @@
             {
               "properties": {
                 "src_flags_hex": {
-                  "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/hex.json",
+                  "$ref": "../common/hex.json",
                   "description": "Specifies the source TCP flags, as the union of all TCP flags observed between the start of the traffic (as defined by the start property) and the end of the traffic (as defined by the end property). "
                 },
                 "dst_flags_hex": {
-                  "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/hex.json",
+                  "$ref": "../common/hex.json",
                   "description": "Specifies the destination TCP flags, as the union of all TCP flags observed between the start of the traffic (as defined by the start property) and the end of the traffic (as defined by the end property)."
                 }
               }
@@ -325,7 +325,7 @@
         }
       },
       "additionalProperties": {
-        "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/dictionary.json",
+        "$ref": "../common/dictionary.json",
         "description": "Custom file extension"
       }
     }

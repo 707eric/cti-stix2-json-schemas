@@ -6,7 +6,7 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/cyber-observable-core.json"
+      "$ref": "../common/cyber-observable-core.json"
     },
     {
       "properties": {
@@ -32,15 +32,15 @@
           "description": "Specifies the observed encoding for the path."
         },
         "ctime": {
-          "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/timestamp.json",
+          "$ref": "../common/timestamp.json",
           "description": "Specifies the date/time the directory was created."
         },
         "mtime": {
-          "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/timestamp.json",
+          "$ref": "../common/timestamp.json",
           "description": "Specifies the date/time the directory was last written to/modified."
         },
         "atime": {
-          "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/timestamp.json",
+          "$ref": "../common/timestamp.json",
           "description": "Specifies the date/time the directory was last accessed."
         },
         "contains_refs": {

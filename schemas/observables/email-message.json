@@ -6,7 +6,7 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/cyber-observable-core.json"
+      "$ref": "../common/cyber-observable-core.json"
     },
     {
       "properties": {
@@ -22,7 +22,7 @@
           "pattern": "^email-message--"
         },
         "date": {
-          "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/timestamp.json",
+          "$ref": "../common/timestamp.json",
           "description": "Specifies the date/time that the email message was sent."
         },
         "content_type": {
@@ -174,7 +174,7 @@
       ]
     },
     "email-additional-header-fields": {
-      "allOf": [{ "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/dictionary.json" }],
+      "allOf": [{ "$ref": "../common/dictionary.json" }],
       "description": "Specifies any other header fields (except for date, received_lines, content_type, from_ref, sender_ref, to_refs, cc_refs, bcc_refs, and subject) found in the email message, as a dictionary.",
       "not": {
         "patternProperties": {

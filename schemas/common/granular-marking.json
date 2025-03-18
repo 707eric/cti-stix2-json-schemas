@@ -21,7 +21,7 @@
     "marking_ref": {
       "allOf": [
         {
-          "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/identifier.json"
+          "$ref": "./identifier.json"
         },
         {
           "pattern": "^marking-definition--",

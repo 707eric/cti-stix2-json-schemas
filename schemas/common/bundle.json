@@ -15,7 +15,7 @@
     "id": {
       "allOf": [
         {
-          "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/identifier.json",
+          "$ref": "./identifier.json",
           "description": "An identifier for this bundle. The id field for the Bundle is designed to help tools that may need it for processing, but tools are not required to store or track it. "
         },
         {
@@ -133,10 +133,10 @@
                 "$ref": "../observables/x509-certificate.json"
               },
               {
-                "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/language-content.json"
+                "$ref": "./language-content.json"
               },
               {
-                "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/marking-definition.json"
+                "$ref": "./marking-definition.json"
               }
             ]
           },
@@ -145,10 +145,10 @@
               {
                 "oneOf": [
                   {
-                    "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/core.json"
+                    "$ref": "./core.json"
                   },
                   {
-                    "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/cyber-observable-core.json"
+                    "$ref": "./cyber-observable-core.json"
                   }
                 ]
               },

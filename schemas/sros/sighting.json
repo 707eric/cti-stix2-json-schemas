@@ -6,7 +6,7 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/core.json"
+      "$ref": "../common/core.json"
     },
     {
       "properties": {
@@ -26,11 +26,11 @@
           "description" : "A description that provides more details and context about the Sighting."
         },
         "first_seen": {
-          "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/timestamp.json",
+          "$ref": "../common/timestamp.json",
           "description": "The beginning of the time window during which the SDO referenced by the sighting_of_ref property was sighted."
         },
         "last_seen": {
-          "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/timestamp.json",
+          "$ref": "../common/timestamp.json",
           "description": "The end of the time window during which the SDO referenced by the sighting_of_ref property was sighted."
         },
         "count": {
@@ -42,7 +42,7 @@
         "sighting_of_ref": {
           "allOf": [
             {
-              "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/identifier.json"
+              "$ref": "../common/identifier.json"
             },
             {
               "not": {
@@ -78,7 +78,7 @@
           "items": {
             "allOf": [
               {
-                "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/identifier.json"
+                "$ref": "../common/identifier.json"
               },
               {
                 "pattern": "^observed-data--"
@@ -93,7 +93,7 @@
           "items": {
             "allOf": [
               {
-                "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/identifier.json"
+                "$ref": "../common/identifier.json"
               },
               {
                 "pattern": "^(identity|location)--"

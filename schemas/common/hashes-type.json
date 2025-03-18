@@ -4,7 +4,7 @@
   "title": "hashes",
   "description": "The Hashes type represents one or more cryptographic hashes, as a special set of key/value pairs",
   "type": "object",
-  "allOf": [{ "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/dictionary.json" }],
+  "allOf": [{ "$ref": "./dictionary.json" }],
   "patternProperties": {
     "^[a-zA-Z0-9_-]{3,250}$": {
       "type": "string",

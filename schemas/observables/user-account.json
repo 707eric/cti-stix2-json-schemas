@@ -6,7 +6,7 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/cyber-observable-core.json"
+      "$ref": "../common/cyber-observable-core.json"
     },
     {
       "properties": {
@@ -62,23 +62,23 @@
           "description": "Specifies if the account is disabled."
         },
         "account_created": {
-          "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/timestamp.json",
+          "$ref": "../common/timestamp.json",
           "description": "Specifies when the account was created."
         },
         "account_expires": {
-          "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/timestamp.json",
+          "$ref": "../common/timestamp.json",
           "description": "Specifies the expiration date of the account."
         },
         "credential_last_changed": {
-          "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/timestamp.json",
+          "$ref": "../common/timestamp.json",
           "description": "Specifies when the account credential was last changed."
         },
         "account_first_login": {
-          "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/timestamp.json",
+          "$ref": "../common/timestamp.json",
           "description": "Specifies when the account was first accessed."
         },
         "account_last_login": {
-          "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/timestamp.json",
+          "$ref": "../common/timestamp.json",
           "description": "Specifies when the account was last accessed."
         }
       }
@@ -103,7 +103,7 @@
   ],
   "definitions": {
     "user-account-extensions-dictionary": {
-      "allOf": [{ "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/dictionary.json" }],
+      "allOf": [{ "$ref": "../common/dictionary.json" }],
       "patternProperties": {
         "^unix-account-ext$": {
           "type": "object",
@@ -145,7 +145,7 @@
         }
       },
       "additionalProperties": {
-        "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/dictionary.json",
+        "$ref": "../common/dictionary.json",
         "description": "Custom file extension"
       }
     },

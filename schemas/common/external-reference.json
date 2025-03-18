@@ -10,14 +10,14 @@
       "description": "A human readable description"
     },
     "url": {
-      "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/url-regex.json",
+      "$ref": "./url-regex.json",
       "description": "A URL reference to an external resource."
     },
     "hashes": {
       "description": "Specifies a dictionary of hashes for the file.",
       "allOf": [
         {
-          "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/hashes-type.json"
+          "$ref": "./hashes-type.json"
         },
         {
           "propertyNames": {

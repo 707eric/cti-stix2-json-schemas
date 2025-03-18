@@ -6,7 +6,7 @@
   "type": "object",
   "allOf": [
     {
-      "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/core.json"
+      "$ref": "../common/core.json"
     },
     {
       "properties": {
@@ -41,7 +41,7 @@
           "type": "array",
           "description": "The STIX Objects (SDOs and SROs) that the note is being applied to.",
           "items": {
-            "$ref": "https://raw.githubusercontent.com/707eric/cti-stix2-json-schemas/refs/heads/master/schemas/common/identifier.json"
+            "$ref": "../common/identifier.json"
           },
           "minItems": 1
         }
